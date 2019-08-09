@@ -1,3 +1,3 @@
-SELECT * FROM users
-JOIN posts ON posts.author_id = users.id
-WHERE users.id = $1;
+SELECT * FROM posts
+JOIN users ON posts.author_id = users.id
+WHERE posts.title = 'title1';
