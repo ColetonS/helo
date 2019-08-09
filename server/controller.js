@@ -36,5 +36,20 @@ module.exports = {
             loggedIn: true})
         }
         
+    },
+    getPosts: (req, res) => {
+        const db = req.app.get('db')
+        db.get_all_posts().then(posts => {
+            res.status(200).send(posts)
+        })
     }
 }
+
+//     getPost: async (req, res) => {
+//         const db = req.app.get('db')
+//         if (req.query.title) {
+//             let filtered = await db.find_by_title
+//             })
+//         }
+
+//     }

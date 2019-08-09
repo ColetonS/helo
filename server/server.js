@@ -17,6 +17,8 @@ app.use(session({
     }
 }))
 
+app.get('/api/posts', ctrl.getPosts)
+// app.get('api/posts/:userid', ctrl.getPost)
 app.post('/api/auth/register', ctrl.register)
 app.post('/api/auth/login', ctrl.login)
 
