@@ -13,7 +13,7 @@ class Nav extends Component {
                 {/* <h1>Testing Nav</h1> */}
                 <div className="user-profile">
                     <h3>{this.props.username}</h3>
-                    <img src={this.props.profilePic} />
+                    <img src={this.props.profilePic} alt='profile-pic' />
                 </div>
                 <Link to='/dashboard'><button>Home</button></Link>
                 <Link to='/new'><button>New Post</button></Link>

@@ -1,3 +1,3 @@
 SELECT * FROM posts
 JOIN users ON posts.author_id = users.id
-WHERE posts.title = 'title1';
+WHERE posts.title LIKE $1;

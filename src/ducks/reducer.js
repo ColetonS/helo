@@ -1,5 +1,5 @@
 const initialState = {
-    id: null,
+    user_id: null,
     username: null,
     password: null,
     profilePic: null
@@ -19,7 +19,7 @@ export default (state=initialState, action) => {
     switch (type) {
         case SET_USER:
             const {id, username, password, profilePic} = payload
-            return {...state, id, username, password, profilePic}
+            return {...state, user_id: id, username, password, profilePic}
         default: return state
     }
 }
